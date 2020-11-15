@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title> Shopping Cart</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./res/logo.png" alt="logo">
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/shopping">Shopping</a></li>
+                <li><a class="active" href="#">Cart</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="shopping">
+            <h2>Shopping Cart</h2>
+            <div id="column">
+                <div class="barre">
+                    <h6>ITEM</h6>
+                    <div>
+                        <h6>QUANTITY</h6>
+                        <h6>UNIT PRICE</h6>
+                    </div>
+                </div>
+                <hr>
+                <div id="item1" class="item">
+                    <div>
+                        <button onclick="redColor('heart1')" type="button" class="btn btn-outline-primary" id="heart1">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                        </button>
+                        <button onclick="closeItem('item1','inp1')" type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="res/jean1.jpg" alt="jeans1">
+                    </div>
+                    <div>
+                        <div>
+                            <button onclick="subItem('inp1'); sumPrice()">-</button>
+                            <input oninput="sumPrice()" id="inp1" type="text" value="1">
+                            <button onclick="addItem('inp1'); sumPrice()">+</button>
+                        </div>
+                        <h6 id="price1" class="price">50 DT</h6>
+                    </div>
+                </div>
+
+
+                <div id="item2" class="item">
+                    <div>
+                        <button onclick="redColor('heart2')" type="button" class="btn btn-outline-primary" id="heart2">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                        </button>
+                        <button onclick="closeItem('item2', 'inp2')" type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="res/brodequin1.jpg" alt="brodequin1">
+                    </div>
+                    <div>
+                        <div>
+                            <button onclick="subItem('inp2'); sumPrice()">-</button>
+                            <input oninput="sumPrice()" id="inp2" type="text" value="1">
+                            <button onclick="addItem('inp2'); sumPrice()">+</button>
+                        </div>
+                        <h6 id="price2" class="price">100 DT</h6>
+                    </div>
+                </div>
+                <div id="item3" class="item">
+                    <div>
+                        <button onclick="redColor('heart3')" type="button" class="btn btn-outline-primary" id="heart3">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                        </button>
+                        <button onclick="closeItem('item3', 'inp3')" type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="res/spadri1.jpg" alt="spadri1">
+                    </div>
+                    <div>
+                        <div>
+                            <button onclick="subItem('inp3'); sumPrice()">-</button>
+                            <input oninput="sumPrice()" id="inp3" type="text" value="1">
+                            <button onclick="addItem('inp3'); sumPrice()">+</button>
+                        </div>
+                        <h6 id="price3" class="price">90 DT</h6>
+                    </div>
+                </div>
+                <div id="item4" class="item">
+                    <div>
+                        <button onclick="redColor('heart4')" type="button" class="btn btn-outline-primary" id="heart4">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                        </button>
+                        <button onclick="closeItem('item4', 'inp4')" type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="res/pull2.jpg" alt="pull2">
+                    </div>
+                    <div>
+                        <div>
+                            <button onclick="subItem('inp4'); sumPrice()">-</button>
+                            <input oninput="sumPrice()" id="inp4" type="text" value="1">
+                            <button onclick="addItem('inp4'); sumPrice()">+</button>
+                        </div>
+                        <h6 id="price4" class="price">30 DT</h6>
+                    </div>
+                </div>
+                <div class="buy">
+                    <button>BUY</button>
+                    <div>
+                        <h6>TOTAL PRICE :</h6>
+                        <input id="total" type="text" readonly>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src='/js/script.js'></script>
+</body>
+
+</html>

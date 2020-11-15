@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+}
+
+hr {
+  color: #808080;
+  width: 1250px;
+  font-size: 50px;
+}
+
+/*********************** Header*********************/
+
+header {
+  position: fixed;
+  background: white;
+  width: 100%;
+  z-index: 99;
+  height: 70px;
+}
+
+header div {
+  position: relative;
+  top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header div img {
+  width: 200px;
+}
+
+header div ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 500px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header div ul li {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a:link {
+  text-decoration: none;
+  list-style-type: none;
+  color: #ababab;
+}
+
+a:visited {
+  text-decoration: none;
+  list-style-type: none;
+  color: #ababab;
+}
+
+a.active {
+  color: #00b39b;
+}
+
+li a:hover {
+  color: #00b39b;
+  text-decoration: none;
+  list-style-type: none;
+}
+/******************MAIN****************/
+
+#shopping {
+  position: relative;
+  top: 100px;
+}
+
+#shopping h2 {
+  text-align: center;
+  color: #17d8be;
+  font-size: 80px;
+  margin-bottom: 80px;
+}
+
+/******************LIST********************/
+#column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.barre {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  width: 1200px;
+  align-items: center;
+  color: #808080;
+}
+
+.barre div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  padding-right: 50px;
+}
+
+.barre:nth-child(1) {
+  padding-left: 200px;
+}
+
+/******************ITEMS********************/
+.item {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  width: 1200px;
+  height: 300px;
+  align-items: center;
+}
+
+.item:hover {
+  box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+}
+
+.item div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+.item div .btn-outline-primary {
+  border: hidden;
+  color: black;
+}
+
+.item div .btn-outline-primary:hover {
+  background-color: white;
+  color: red;
+}
+.item div button:focus {
+  box-shadow: none;
+  outline: 0;
+  border: none;
+}
+
+.item div img {
+  max-width: 300px;
+  max-height: 230px;
+  position: relative;
+  bottom: 5px;
+  left: 50px;
+}
+
+.item div:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+  width: 430px;
+}
+
+input {
+  width: 50px;
+  text-align: center;
+}
+.item div h6 {
+  color: #808080;
+  margin-left: 25px;
+  width: 100px;
+  margin-left: 170px;
+  font-weight: bold;
+}
+
+.item div div button {
+  background: #17d8be;
+  border: hidden;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  width: 25px;
+  height: 30px;
+}
+
+.item div div button:hover {
+  background-color: #12ac97;
+}
+
+/******************BUY********************/
+.buy {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  width: 1200px;
+  align-items: center;
+  color: #808080;
+}
+.buy button {
+  width: 150px;
+  height: 30px;
+  border: hidden;
+  background: #17d8be;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 350;
+  margin-left: 30px;
+}
+
+.buy button:hover {
+  background: #12ac97;
+}
+
+.buy button:focus {
+  box-shadow: none;
+  outline: 0;
+  border: none;
+}
+
+.buy div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  padding-right: 50px;
+}
+
+.buy div input {
+  width: 100px;
+  border: hidden;
+  font-size: 20px;
+  font-weight: bold;
+  color: #808080;
+}
